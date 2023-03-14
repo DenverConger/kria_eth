@@ -13,13 +13,16 @@ Ethernet Pin connection? Just in Verilog or also on the embedded system? I.E mul
 
 Clock speeds? I know its different per Gb connection. How do we deal with it?
 
-Inputing into the Microcontroller
+Inputting into the Microcontroller
 
 ### Outline
 
 ## FW and Microcontroller
 
 ### Questions
+https://stackoverflow.com/questions/28063419/what-does-the-interrupt-code-for-packet-processing-in-the-tcp-ip
+good link for processing tcp-ip includes link for linux kernel
+
 Input from the HW design? will we store in memory and than call that memory form the FW side, or a direct data stream via "GPIO" style design.
 Registers/C code, Vitis Automates some of the pain out of custom chips by letting it knwo the settings. How automated is it? calling a PL kernel? how can we do this efficently?
 
