@@ -1,0 +1,19 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-380,-241",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst tri_mode_ethernet_mac_0 -pg 1 -lvl 1 -x 180 -y 0 -defaultsOSRD
+levelinfo -pg 1 -10 180 370
+pagesize -pg 1 -db -bbox -sgen -10 -210 370 400
+"
+}
+{
+   "da_aeth_cnt":"2",
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"39",
+   "da_clkrst_cnt":"13",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

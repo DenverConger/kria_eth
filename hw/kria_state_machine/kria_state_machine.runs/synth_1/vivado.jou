@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar 23 16:23:20 2023
+# Process ID: 376274
+# Current directory: /home/denmann99/Documents/lab07/kria_state_machine/kria_state_machine.runs/synth_1
+# Command line: vivado -log fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga.tcl
+# Log file: /home/denmann99/Documents/lab07/kria_state_machine/kria_state_machine.runs/synth_1/fpga.vds
+# Journal file: /home/denmann99/Documents/lab07/kria_state_machine/kria_state_machine.runs/synth_1/vivado.jou
+# Running On: Xilinx-Omniverse, OS: Linux, CPU Frequency: 4543.374 MHz, CPU Physical cores: 6, Host memory: 16587 MB
+#-----------------------------------------------------------
+source fpga.tcl -notrace

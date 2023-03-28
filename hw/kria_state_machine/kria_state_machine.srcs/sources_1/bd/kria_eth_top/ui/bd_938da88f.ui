@@ -1,0 +1,83 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Addressing View_Layers":"/clk_wiz_0_clk_200n:false|/zynq_ultra_ps_e_0_pl_resetn0:false|/util_ds_buf_0_IBUF_OUT:false|/clk_wiz_1_clk_int90:false|/zynq_ultra_ps_e_0_pl_clk0:false|/clk_wiz_0_clk_200p:false|/clk_wiz_1_clkfb_out:false|/clk_wiz_1_clk_200:false|/clk_wiz_1_clk_int:false|",
+   "Addressing View_ScaleFactor":"1.0",
+   "Addressing View_TopLeft":"-161,-137",
+   "Color Coded_ScaleFactor":"0.552436",
+   "Color Coded_TopLeft":"-118,-127",
+   "Default View_Layers":"/clk_wiz_0_clk_200n:true|/zynq_ultra_ps_e_0_pl_resetn0:true|/util_ds_buf_0_IBUF_OUT:true|/clk_wiz_1_clk_int90:true|/zynq_ultra_ps_e_0_pl_clk0:true|/clk_wiz_0_clk_200p:true|/clk_wiz_1_clkfb_out:true|/clk_wiz_1_clk_200:true|/clk_wiz_1_clk_int:true|",
+   "Default View_ScaleFactor":"0.548082",
+   "Default View_TopLeft":"-168,-155",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_Layers":"/clk_wiz_0_clk_200n:false|/zynq_ultra_ps_e_0_pl_resetn0:false|/util_ds_buf_0_IBUF_OUT:false|/clk_wiz_1_clk_int90:false|/zynq_ultra_ps_e_0_pl_clk0:false|/clk_wiz_0_clk_200p:false|/clk_wiz_1_clkfb_out:false|/clk_wiz_1_clk_200:false|/clk_wiz_1_clk_int:false|",
+   "Interfaces View_ScaleFactor":"1.0",
+   "Interfaces View_TopLeft":"-91,-137",
+   "No Loops_Layers":"/clk_wiz_0_clk_200n:true|/zynq_ultra_ps_e_0_pl_resetn0:true|/util_ds_buf_0_IBUF_OUT:true|/clk_wiz_1_clk_int90:true|/zynq_ultra_ps_e_0_pl_clk0:true|/clk_wiz_0_clk_200p:true|/clk_wiz_1_clkfb_out:true|/clk_wiz_1_clk_200:true|/clk_wiz_1_clk_int:true|",
+   "No Loops_ScaleFactor":"0.586614",
+   "No Loops_TopLeft":"-118,-138",
+   "Reduced Jogs_ScaleFactor":"0.593288",
+   "Reduced Jogs_TopLeft":"-118,-103",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_btnu -pg 1 -lvl 0 -x -10 -y 310 -defaultsOSRD
+preplace port port-id_btnc -pg 1 -lvl 0 -x -10 -y 390 -defaultsOSRD
+preplace port port-id_btnr -pg 1 -lvl 0 -x -10 -y 370 -defaultsOSRD
+preplace port port-id_btnd -pg 1 -lvl 0 -x -10 -y 350 -defaultsOSRD
+preplace port port-id_btnl -pg 1 -lvl 0 -x -10 -y 330 -defaultsOSRD
+preplace port port-id_uart_cts_0 -pg 1 -lvl 0 -x -10 -y 530 -defaultsOSRD
+preplace port port-id_phy_reset_n_0 -pg 1 -lvl 5 -x 1580 -y 390 -defaultsOSRD
+preplace port port-id_phy_tx_ctl_0 -pg 1 -lvl 5 -x 1580 -y 370 -defaultsOSRD
+preplace port port-id_phy_rx_ctl_0 -pg 1 -lvl 0 -x -10 -y 470 -defaultsOSRD
+preplace port port-id_phy_tx_clk_0 -pg 1 -lvl 5 -x 1580 -y 330 -defaultsOSRD
+preplace port port-id_phy_rx_clk_0 -pg 1 -lvl 0 -x -10 -y 430 -defaultsOSRD
+preplace port port-id_uart_txd_0 -pg 1 -lvl 5 -x 1580 -y 410 -defaultsOSRD
+preplace port port-id_uart_rxd_0 -pg 1 -lvl 0 -x -10 -y 510 -defaultsOSRD
+preplace port port-id_phy_int_n_0 -pg 1 -lvl 0 -x -10 -y 490 -defaultsOSRD
+preplace port port-id_uart_rts_0 -pg 1 -lvl 5 -x 1580 -y 430 -defaultsOSRD
+preplace portBus sw_0 -pg 1 -lvl 0 -x -10 -y 410 -defaultsOSRD
+preplace portBus phy_txd_0 -pg 1 -lvl 5 -x 1580 -y 350 -defaultsOSRD
+preplace portBus phy_rxd_0 -pg 1 -lvl 0 -x -10 -y 450 -defaultsOSRD
+preplace portBus led_0 -pg 1 -lvl 5 -x 1580 -y 310 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y 90 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 3 -x 1100 -y 190 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 2 -x 810 -y 190 -defaultsOSRD
+preplace inst fpga_0 -pg 1 -lvl 4 -x 1410 -y 370 -defaultsOSRD
+preplace netloc btnc_0_1 1 0 4 NJ 390 NJ 390 NJ 390 NJ
+preplace netloc btnd_0_1 1 0 4 NJ 350 NJ 350 NJ 350 NJ
+preplace netloc btnl_0_1 1 0 4 NJ 330 NJ 330 NJ 330 NJ
+preplace netloc btnr_0_1 1 0 4 NJ 370 NJ 370 NJ 370 NJ
+preplace netloc btnu_0_1 1 0 4 NJ 310 NJ 310 NJ 310 NJ
+preplace netloc clk_wiz_1_clk_200 1 3 1 1260 150n
+preplace netloc clk_wiz_1_clk_int 1 3 1 1240 170n
+preplace netloc clk_wiz_1_clk_int90 1 3 1 1230 190n
+preplace netloc clk_wiz_1_clkfb_out 1 2 2 970 90 1220
+preplace netloc clk_wiz_1_locked 1 3 1 1220 230n
+preplace netloc fpga_0_led 1 4 1 NJ 310
+preplace netloc fpga_0_phy_reset_n 1 4 1 NJ 390
+preplace netloc fpga_0_phy_tx_clk 1 4 1 NJ 330
+preplace netloc fpga_0_phy_tx_ctl 1 4 1 NJ 370
+preplace netloc fpga_0_phy_txd 1 4 1 NJ 350
+preplace netloc fpga_0_uart_rts 1 4 1 NJ 430
+preplace netloc fpga_0_uart_txd 1 4 1 NJ 410
+preplace netloc phy_int_n_0_1 1 0 4 NJ 490 NJ 490 NJ 490 NJ
+preplace netloc phy_rx_clk_0_1 1 0 4 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc phy_rx_ctl_0_1 1 0 4 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc phy_rxd_0_1 1 0 4 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc sw_0_1 1 0 4 NJ 410 NJ 410 NJ 410 NJ
+preplace netloc uart_cts_0_1 1 0 4 NJ 530 NJ 530 NJ 530 NJ
+preplace netloc uart_rxd_0_1 1 0 4 NJ 510 NJ 510 NJ 510 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 10 200 650
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 3 N 80 960 80 1250
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 2 20 210 640
+preplace netloc util_ds_buf_0_CLK_OUT_D3 1 2 1 950 170n
+levelinfo -pg 1 -10 330 810 1100 1410 1580
+pagesize -pg 1 -db -bbox -sgen -170 -90 1740 590
+"
+}
+{
+   "da_clkrst_cnt":"1",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}
