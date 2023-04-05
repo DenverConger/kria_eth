@@ -1,0 +1,16 @@
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Tue Mar 28 13:10:32 2023
+| Host         : Xilinx-Omniverse running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kria_eth_top_axi_ethernet_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kria_eth_top_axi_ethernet_0_2 (xilinx.com:ip:axi_ethernet:7.2) from (Rev. 8) to (Rev. 10)
+

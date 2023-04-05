@@ -1,0 +1,100 @@
+{
+    "versionMajor": "0",
+    "versionMinor": "0",
+    "usesPR": "false",
+    "platformState": "pre_synth",
+    "topModuleName": "kria_eth_top_wrapper",
+    "acceleratorBinaryFormat": "xclbin2",
+    "acceleratorBinaryContent": "bitstream",
+    "validAcceleratorBinaryContentValues": "dcp,bitstream",
+    "dcpFunctionStripped": "false",
+    "dcpEncrypted": "false",
+    "defaultOutputType": "hw_export",
+    "designIntent": {
+        "dataCenter": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "embedded": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "externalHost": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "serverManaged": {
+            "value": "false",
+            "explicit": "false"
+        }
+    },
+    "board": {
+        "name": "xilinx.com:kr260_som:1.1",
+        "vendor": "xilinx.com",
+        "part": "xck26-sfvc784-2LV-c",
+        "boardPart": "xilinx.com:kr260_som:part0:1.1",
+        "imageFileHdpi": "kr260_board.png"
+    },
+    "devices": [
+        {
+            "name": "fpga0",
+            "type": "8",
+            "fpgaPart": "zynquplus:xck26:sfvc784:-2LV:c",
+            "part": {
+                "name": "xck26-sfvc784-2LV-c",
+                "architecture": "zynquplus",
+                "device": "xck26",
+                "package": "sfvc784",
+                "speedGrade": "-2LV",
+                "tempGrade": "c"
+            },
+            "numSLRs": "1",
+            "core": {
+                "name": "OCL_REGION_0",
+                "type": "clc_region",
+                "numComputeUnits": "60",
+                "availableResources": {
+                    "bramCount": "130",
+                    "dspCount": "1248",
+                    "lutCount": "109526",
+                    "registerCount": "223519"
+                }
+            }
+        }
+    ],
+    "files": [
+        {
+            "name": "kria_eth_top_wrapper.bit",
+            "type": "FULL_BIT"
+        }
+    ],
+    "vendor": "xilinx",
+    "boardId": "kr260_som",
+    "description": "Vivado generated Hardware Platform",
+    "uniqueName": "xilinx:kr260_som::0.0",
+    "fpgaPart": "zynquplus",
+    "fpgaDevice": "xck26",
+    "unifiedPlatform": "true",
+    "expandablePlatform": "false",
+    "hardware": "true",
+    "softwareEmulation": "true",
+    "hardwareEmulation": "false",
+    "hardwareEmuPlatform": "false",
+    "usesNIFD": "false",
+    "generatedName": "Vivado",
+    "generatedVersion": "2022.2.2",
+    "generatedChangeList": "3788238",
+    "generatedIpChangeList": "3783773",
+    "generatedTimestamp": "Tue Mar 28 13:46:09 2023",
+    "idCode": "04a49093",
+    "designIDs": {
+        "designID": "3047364439"
+    },
+    "resources": [
+        {
+            "type": "REG",
+            "count": "223519"
+        }
+    ]
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="kr260_starter_kit_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/kr260_starter_kit_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="kr260_starter_kit_zynq_ultra_ps_e_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

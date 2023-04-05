@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr  4 17:50:52 2023
+# Process ID: 170197
+# Current directory: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1
+# Command line: vivado -log kria_eth_top_axi_ethernet_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_eth_top_axi_ethernet_0_2.tcl
+# Log file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/kria_eth_top_axi_ethernet_0_2.vds
+# Journal file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/vivado.jou
+# Running On: Xilinx-Omniverse, OS: Linux, CPU Frequency: 3701.368 MHz, CPU Physical cores: 6, Host memory: 16587 MB
+#-----------------------------------------------------------
+source kria_eth_top_axi_ethernet_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2115.406 ; gain = 88.992 ; free physical = 414 ; free virtual = 15371
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: kria_eth_top_axi_ethernet_0_2
+Command: synth_design -top kria_eth_top_axi_ethernet_0_2 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-5178] IP kria_eth_top_axi_ethernet_0_2 will not be generated with lower license level. If you would like to generate with the current available license levels, please reset and regenerate.
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 170543
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3363.543 ; gain = 237.832 ; free physical = 259 ; free virtual = 16128
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.469; parent = 3369.484; children = 997.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_axi_ethernet_0_2' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_c_counter_binary_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_c_counter_binary_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_c_counter_binary_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_c_counter_binary_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'Q' of module 'bd_17e7_c_counter_binary_0_0' is unconnected for instance 'c_counter_binary_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:289]
+WARNING: [Synth 8-7023] instance 'c_counter_binary_0' of module 'bd_17e7_c_counter_binary_0_0' has 4 connections declared, but only 3 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:289]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_c_shift_ram_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_c_shift_ram_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_c_shift_ram_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_c_shift_ram_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_eth_buf_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_eth_buf_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_eth_buf_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_eth_buf_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'RESET2PCSPMA' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7071] port 'PHY_RST_N' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7071] port 'mdio_o_top' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7071] port 'mdio_t_top' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7071] port 'mdc_top' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7071] port 'mdio_i_temac' of module 'bd_17e7_eth_buf_0' is unconnected for instance 'eth_buf' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+WARNING: [Synth 8-7023] instance 'eth_buf' of module 'bd_17e7_eth_buf_0' has 102 connections declared, but only 96 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:299]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_mac_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_mac_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_mac_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_mac_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rx_axis_filter_tuser' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'tx_enable' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_vector' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'tx_statistics_valid' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'speedis100' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'inband_link_status' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'inband_clock_speed' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7071] port 'inband_duplex_status' of module 'bd_17e7_mac_0' is unconnected for instance 'mac' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+WARNING: [Synth 8-7023] instance 'mac' of module 'bd_17e7_mac_0' has 62 connections declared, but only 54 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:396]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_util_vector_logic_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_util_vector_logic_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/.Xil/Vivado-170197-Xilinx-Omniverse/realtime/bd_17e7_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_17e7_xlconstant_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_4/synth/bd_17e7_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7_xlconstant_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_4/synth/bd_17e7_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_17e7' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/synth/bd_17e7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_axi_ethernet_0_2' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3436.449 ; gain = 310.738 ; free physical = 279 ; free virtual = 15830
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4434.438; parent = 3436.453; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3454.262 ; gain = 328.551 ; free physical = 240 ; free virtual = 15794
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4452.250; parent = 3454.266; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3454.262 ; gain = 328.551 ; free physical = 195 ; free virtual = 15751
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4452.250; parent = 3454.266; children = 997.984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3454.262 ; gain = 0.000 ; free physical = 168 ; free virtual = 15725
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/bd_17e7_eth_buf_0/bd_17e7_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/bd_17e7_eth_buf_0/bd_17e7_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc] for cell 'inst/mac'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc] for cell 'inst/mac'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_2/bd_17e7_c_shift_ram_0_0/bd_17e7_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_2/bd_17e7_c_shift_ram_0_0/bd_17e7_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_3/bd_17e7_c_counter_binary_0_0/bd_17e7_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_3/bd_17e7_c_counter_binary_0_0/bd_17e7_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_5/bd_17e7_util_vector_logic_0_0/bd_17e7_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_5/bd_17e7_util_vector_logic_0_0/bd_17e7_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2_ooc.xdc] for cell 'inst'
+WARNING: [Constraints 18-619] A clock with name 'rgmii_rxc' already exists, overwriting the previous clock with the same name. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2_ooc.xdc:39]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_board.xdc] for cell 'inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/kria_eth_top_axi_ethernet_0_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/kria_eth_top_axi_ethernet_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3536.105 ; gain = 0.000 ; free physical = 151 ; free virtual = 13787
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3536.105 ; gain = 0.000 ; free physical = 156 ; free virtual = 13785
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3536.105 ; gain = 410.395 ; free physical = 308 ; free virtual = 13641
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4534.094; parent = 3536.109; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3536.105 ; gain = 410.395 ; free physical = 294 ; free virtual = 13628
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4534.094; parent = 3536.109; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0/bd_17e7_mac_0_in_context.xdc, line 28).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/eth_buf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mac. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_shift_ram_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/phy_rst_n[0]. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3536.105 ; gain = 410.395 ; free physical = 275 ; free virtual = 13611
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4534.094; parent = 3536.109; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3536.105 ; gain = 410.395 ; free physical = 432 ; free virtual = 13770
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4534.094; parent = 3536.109; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3536.105 ; gain = 410.395 ; free physical = 200 ; free virtual = 13581
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2642.127; parent = 2425.770; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4534.094; parent = 3536.109; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'rgmii_rxc'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 3986.629 ; gain = 860.918 ; free physical = 2037 ; free virtual = 17570
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3107.550; parent = 2962.074; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4984.617; parent = 3986.633; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 3986.629 ; gain = 860.918 ; free physical = 2024 ; free virtual = 17560
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3107.550; parent = 2962.178; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4984.617; parent = 3986.633; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 4005.660 ; gain = 879.949 ; free physical = 2018 ; free virtual = 17546
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3107.651; parent = 2962.554; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5003.648; parent = 4005.664; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2213 ; free virtual = 18841
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.650; parent = 2975.585; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2207 ; free virtual = 18836
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.666; parent = 2975.601; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2198 ; free virtual = 18826
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.682; parent = 2975.616; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2189 ; free virtual = 18818
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.760; parent = 2975.694; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2173 ; free virtual = 18802
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.760; parent = 2975.694; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2171 ; free virtual = 18799
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.791; parent = 2975.726; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_17e7_c_counter_binary_0_0  |         1|
+|2     |bd_17e7_c_shift_ram_0_0       |         1|
+|3     |bd_17e7_eth_buf_0             |         1|
+|4     |bd_17e7_mac_0                 |         1|
+|5     |bd_17e7_util_vector_logic_0_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_17e7_c_counter_binary_0  |     1|
+|2     |bd_17e7_c_shift_ram_0       |     1|
+|3     |bd_17e7_eth_buf             |     1|
+|4     |bd_17e7_mac                 |     1|
+|5     |bd_17e7_util_vector_logic_0 |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.598 ; gain = 885.887 ; free physical = 2165 ; free virtual = 18794
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3119.807; parent = 2975.741; children = 216.357
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5009.586; parent = 4011.602; children = 997.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 4011.598 ; gain = 804.043 ; free physical = 2190 ; free virtual = 18820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 4011.605 ; gain = 885.887 ; free physical = 2182 ; free virtual = 18815
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4011.605 ; gain = 0.000 ; free physical = 2175 ; free virtual = 18811
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4046.285 ; gain = 0.000 ; free physical = 2182 ; free virtual = 18851
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 93ec162e
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 4060.223 ; gain = 1857.121 ; free physical = 2319 ; free virtual = 18999
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/kria_eth_top_axi_ethernet_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP kria_eth_top_axi_ethernet_0_2, cache-ID = c6b546238cf8aaef
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/kria_eth_top_axi_ethernet_0_2_synth_1/kria_eth_top_axi_ethernet_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kria_eth_top_axi_ethernet_0_2_utilization_synth.rpt -pb kria_eth_top_axi_ethernet_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 17:51:59 2023...

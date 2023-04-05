@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Oct 14 13:18:42 2022
+# Process ID: 56750
+# Current directory: /tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1
+# Command line: vivado -log kr260_starter_kit_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kr260_starter_kit_wrapper.tcl
+# Log file: /tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/kr260_starter_kit_wrapper.vds
+# Journal file: /tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/vivado.jou
+# Running On: xcosswbld07, OS: Linux, CPU Frequency: 1231.759 MHz, CPU Physical cores: 28, Host memory: 540966 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl'
+484 Beta devices matching pattern found, 484 enabled.
+enable_beta_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2066.867 ; gain = 131.633 ; free physical = 467092 ; free virtual = 500762
+source kr260_starter_kit_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2022.2_1014_0655/installs/lin64/Vivado/2022.2/data/ip'.
+Command: synth_design -top kr260_starter_kit_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57171
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/proj/xbuilds/SWIP/2022.2_1014_0655/installs/lin64/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3292.590 ; gain = 229.832 ; free physical = 465574 ; free virtual = 499218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2565.403; parent = 2402.609; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4298.477; parent = 3292.594; children = 1005.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kr260_starter_kit_wrapper' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.srcs/sources_1/imports/hdl/kr260_starter_kit_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'kr260_starter_kit' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:12]
+INFO: [Synth 8-6157] synthesizing module 'kr260_starter_kit_xlslice_0_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ip/kr260_starter_kit_xlslice_0_0/synth/kr260_starter_kit_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'kr260_starter_kit_xlslice_0_0' (0#1) [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ip/kr260_starter_kit_xlslice_0_0/synth/kr260_starter_kit_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/.Xil/Vivado-56750-xcosswbld07/realtime/kr260_starter_kit_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' (0#1) [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/.Xil/Vivado-56750-xcosswbld07/realtime/kr260_starter_kit_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'emio_enet0_enet_tsu_timer_cnt' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_resetn1' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_resetn2' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_resetn3' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_clk0' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'kr260_starter_kit_zynq_ultra_ps_e_0_0' has 9 connections declared, but only 2 given [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'kr260_starter_kit' (0#1) [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/synth/kr260_starter_kit.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'kr260_starter_kit_wrapper' (0#1) [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.srcs/sources_1/imports/hdl/kr260_starter_kit_wrapper.v:12]
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3359.559 ; gain = 296.801 ; free physical = 465608 ; free virtual = 499276
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2565.403; parent = 2402.609; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4365.445; parent = 3359.562; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3377.371 ; gain = 314.613 ; free physical = 465600 ; free virtual = 499273
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2565.403; parent = 2402.609; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4383.258; parent = 3377.375; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3377.371 ; gain = 314.613 ; free physical = 465597 ; free virtual = 499272
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2565.403; parent = 2402.609; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4383.258; parent = 3377.375; children = 1005.883
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3377.371 ; gain = 0.000 ; free physical = 465575 ; free virtual = 499252
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ip/kr260_starter_kit_zynq_ultra_ps_e_0_0/kr260_starter_kit_zynq_ultra_ps_e_0_0/kr260_starter_kit_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kr260_starter_kit_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.gen/sources_1/bd/kr260_starter_kit/ip/kr260_starter_kit_zynq_ultra_ps_e_0_0/kr260_starter_kit_zynq_ultra_ps_e_0_0/kr260_starter_kit_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kr260_starter_kit_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.srcs/constrs_1/imports/xdc/default.xdc]
+Finished Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.srcs/constrs_1/imports/xdc/default.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.srcs/constrs_1/imports/xdc/default.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/kr260_starter_kit_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/kr260_starter_kit_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3408.246 ; gain = 0.000 ; free physical = 465369 ; free virtual = 499047
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3408.246 ; gain = 0.000 ; free physical = 465369 ; free virtual = 499047
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/proj/xbuilds/SWIP/2022.2_1014_0655/installs/lin64/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3408.246 ; gain = 345.488 ; free physical = 464968 ; free virtual = 498649
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2567.705; parent = 2405.495; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4414.133; parent = 3408.250; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3408.246 ; gain = 345.488 ; free physical = 464957 ; free virtual = 498639
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2567.705; parent = 2405.495; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4414.133; parent = 3408.250; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for kr260_starter_kit_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kr260_starter_kit_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kr260_starter_kit_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3408.246 ; gain = 345.488 ; free physical = 464951 ; free virtual = 498633
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2567.705; parent = 2405.495; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4414.133; parent = 3408.250; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3408.246 ; gain = 345.488 ; free physical = 464946 ; free virtual = 498628
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2567.705; parent = 2405.495; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4414.133; parent = 3408.250; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[1] in module kr260_starter_kit_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module kr260_starter_kit_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3408.246 ; gain = 345.488 ; free physical = 464828 ; free virtual = 498513
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2567.705; parent = 2405.495; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4414.133; parent = 3408.250; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 3896.777 ; gain = 834.020 ; free physical = 463497 ; free virtual = 497206
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3107.901; parent = 2951.947; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4902.664; parent = 3896.781; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 3896.777 ; gain = 834.020 ; free physical = 463570 ; free virtual = 497280
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3107.990; parent = 2952.037; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4902.664; parent = 3896.781; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 3915.809 ; gain = 853.051 ; free physical = 463689 ; free virtual = 497399
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4921.695; parent = 3915.812; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463636 ; free virtual = 497350
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463622 ; free virtual = 497341
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463603 ; free virtual = 497322
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463586 ; free virtual = 497308
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463569 ; free virtual = 497293
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463551 ; free virtual = 497278
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------+----------+
+|      |BlackBox name                         |Instances |
++------+--------------------------------------+----------+
+|1     |kr260_starter_kit_zynq_ultra_ps_e_0_0 |         1|
++------+--------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |kr260_starter_kit_zynq_ultra_ps_e_0 |     1|
+|2     |OBUF                                |     1|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 3921.746 ; gain = 858.988 ; free physical = 463539 ; free virtual = 497267
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3108.412; parent = 2952.459; children = 162.794
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4927.633; parent = 3921.750; children = 1005.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 3921.746 ; gain = 828.113 ; free physical = 463575 ; free virtual = 497303
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 3921.754 ; gain = 858.988 ; free physical = 463571 ; free virtual = 497298
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3936.684 ; gain = 0.000 ; free physical = 463657 ; free virtual = 497384
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3957.465 ; gain = 0.000 ; free physical = 463553 ; free virtual = 497281
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: fcf4b01b
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 3957.465 ; gain = 1817.848 ; free physical = 463788 ; free virtual = 497516
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.rcD1Rez4M9/temp/hw_design/k26_starter_kits/kr260/project/kr260_starter_kit.runs/synth_1/kr260_starter_kit_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kr260_starter_kit_wrapper_utilization_synth.rpt -pb kr260_starter_kit_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 14 13:19:57 2022...

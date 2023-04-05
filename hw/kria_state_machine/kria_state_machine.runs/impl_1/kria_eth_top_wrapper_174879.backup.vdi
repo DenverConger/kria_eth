@@ -1,0 +1,894 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr  4 17:55:48 2023
+# Process ID: 174879
+# Current directory: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1
+# Command line: vivado -log kria_eth_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kria_eth_top_wrapper.tcl -notrace
+# Log file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper.vdi
+# Journal file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/vivado.jou
+# Running On: Xilinx-Omniverse, OS: Linux, CPU Frequency: 4331.412 MHz, CPU Physical cores: 6, Host memory: 16587 MB
+#-----------------------------------------------------------
+source kria_eth_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top kria_eth_top_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2.dcp' for cell 'kria_eth_top_i/axi_ethernet_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0_dma'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_intc_0_2/kria_eth_top_axi_intc_0_2.dcp' for cell 'kria_eth_top_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/kria_eth_top_axi_smc_0.dcp' for cell 'kria_eth_top_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2.dcp' for cell 'kria_eth_top_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0.dcp' for cell 'kria_eth_top_i/proc_sys_reset_100'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0.dcp' for cell 'kria_eth_top_i/proc_sys_reset_125'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0.dcp' for cell 'kria_eth_top_i/proc_sys_reset_300'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0.dcp' for cell 'kria_eth_top_i/rst_ps8_0_200M'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0.dcp' for cell 'kria_eth_top_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_xbar_1/kria_eth_top_xbar_1.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/m02_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_pc_0/kria_eth_top_auto_pc_0.dcp' for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_3/bd_17e7_c_counter_binary_0_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0/inst/c_counter_binary_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_2/bd_17e7_c_shift_ram_0_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0/inst/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/bd_17e7_eth_buf_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0/inst/eth_buf'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/bd_17e7_mac_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac'
+INFO: [Project 1-454] Reading design checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_5/bd_17e7_util_vector_logic_0_0.dcp' for cell 'kria_eth_top_i/axi_ethernet_0/inst/util_vector_logic_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3169.797 ; gain = 0.000 ; free physical = 9522 ; free virtual = 27027
+INFO: [Netlist 29-17] Analyzing 388 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/bd_0/ip/ip_1/bd_2701_psr_aclk_0.xdc] for cell 'kria_eth_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/bd_0/ip/ip_1/bd_2701_psr_aclk_0.xdc] for cell 'kria_eth_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0_board.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_intc_0_2/kria_eth_top_axi_intc_0_2.xdc] for cell 'kria_eth_top_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_intc_0_2/kria_eth_top_axi_intc_0_2.xdc] for cell 'kria_eth_top_i/axi_intc_0/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0_board.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0_board.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0.xdc] for cell 'kria_eth_top_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0.xdc] for cell 'kria_eth_top_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/bd_0/ip/ip_1/bd_2701_psr_aclk_0_board.xdc] for cell 'kria_eth_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/bd_0/ip/ip_1/bd_2701_psr_aclk_0_board.xdc] for cell 'kria_eth_top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma/U0'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0.xdc:61]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/synth/kria_eth_top_axi_ethernet_0_2.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/bd_17e7_eth_buf_0_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/bd_17e7_eth_buf_0_board.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2.xdc] for cell 'kria_eth_top_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2.xdc:57]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2.xdc] for cell 'kria_eth_top_i/clk_wiz/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_board.xdc] for cell 'kria_eth_top_i/clk_wiz/inst'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_board.xdc] for cell 'kria_eth_top_i/clk_wiz/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/synth/bd_17e7_eth_buf_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_0/synth/bd_17e7_eth_buf_0.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst' of design 'design_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst' of design 'design_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:29]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst' of design 'design_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:52]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst' of design 'design_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:53]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc] for cell 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0_clocks.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0_clocks.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma/U0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc:14]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc:18]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_3/kria_eth_top_auto_cc_3_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc:14]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc:18]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc:14]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc:18]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m02_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc:14]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc:18]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2_clocks.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m02_couplers/auto_cc/inst'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_intc_0_2/kria_eth_top_axi_intc_0_2_clocks.xdc] for cell 'kria_eth_top_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_intc_0_2/kria_eth_top_axi_intc_0_2_clocks.xdc] for cell 'kria_eth_top_i/axi_intc_0/U0'
+INFO: [Project 1-1714] 70 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 59 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3999.980 ; gain = 0.000 ; free physical = 9161 ; free virtual = 26678
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 295 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 7 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 113 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 10 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
+
+40 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3999.980 ; gain = 1770.262 ; free physical = 9161 ; free virtual = 26678
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3999.980 ; gain = 0.000 ; free physical = 9150 ; free virtual = 26668
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 875c106b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.8 . Memory (MB): peak = 3999.980 ; gain = 0.000 ; free physical = 9139 ; free virtual = 26656
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_BASIC.TX_BASIC_INTERFACE/addr_2_en_i_1 into driver instance kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_BASIC.TX_BASIC_INTERFACE/addr_2_en_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0/TX_INTFCE_I/TX_EMAC_INTERFACE/txc_mem_rd_addr_1[9]_i_2 into driver instance kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0/TX_INTFCE_I/TX_EMAC_INTERFACE/txc_mem_rd_addr_1[9]_i_4, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/bd_17e7_mac_0_core/sync_axi_rx_rstn_rx_clk/async_rst0_i_1__0 into driver instance kria_eth_top_i/axi_ethernet_0/inst/eth_buf/U0/COMBINE_RESETS/RESET2TEMACn_INST_0, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_DRE.I_DRE_16_to_64/xpm_fifo_instance.xpm_fifo_sync_inst_i_10__0 into driver instance kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_DRE.I_DRE_16_to_64/xpm_fifo_instance.xpm_fifo_sync_inst_i_12__0, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst_i_1__1 into driver instance kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/sig_dre_tvalid_i_i_4, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realign_cmd_cmplt_reg_i_1 into driver instance kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realigner_btt2[15]_i_2, which resulted in an inversion of 17 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/sig_tlast_out_i_1__0 into driver instance kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/sig_dre_tvalid_i_i_5, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_dre_tvalid_i_i_2__0 into driver instance kria_eth_top_i/axi_ethernet_0_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/GEN_DELAY_REG[0].sig_delay_data_reg[0][9]_i_4, which resulted in an inversion of 12 pins
+INFO: [Opt 31-138] Pushed 95 inverter(s) to 1414 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 182ec7a23
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8919 ; free virtual = 26429
+INFO: [Opt 31-389] Phase Retarget created 110 cells and removed 1100 cells
+INFO: [Opt 31-1021] In phase Retarget, 64 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1cc61db5e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8918 ; free virtual = 26428
+INFO: [Opt 31-389] Phase Constant propagation created 74 cells and removed 905 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1479d4e84
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8915 ; free virtual = 26426
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 788 cells
+INFO: [Opt 31-1021] In phase Sweep, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 1479d4e84
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8914 ; free virtual = 26424
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1479d4e84
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8914 ; free virtual = 26424
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1d127e837
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8914 ; free virtual = 26424
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 45 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             110  |            1100  |                                             64  |
+|  Constant propagation         |              74  |             905  |                                             60  |
+|  Sweep                        |               0  |             788  |                                             80  |
+|  BUFG optimization            |               0  |               0  |                                              2  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             45  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8918 ; free virtual = 26428
+Ending Logic Optimization Task | Checksum: 21be5e02c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4061.848 ; gain = 0.000 ; free physical = 8918 ; free virtual = 26428
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 3 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 182335114
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8493 ; free virtual = 26025
+Ending Power Optimization Task | Checksum: 182335114
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 4740.488 ; gain = 678.641 ; free physical = 8523 ; free virtual = 26055
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1e54a5e4c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8530 ; free virtual = 26057
+Ending Final Cleanup Task | Checksum: 1e54a5e4c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8529 ; free virtual = 26056
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8529 ; free virtual = 26056
+Ending Netlist Obfuscation Task | Checksum: 1e54a5e4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8529 ; free virtual = 26056
+INFO: [Common 17-83] Releasing license: Implementation
+82 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 4740.488 ; gain = 740.508 ; free physical = 8529 ; free virtual = 26056
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4740.488 ; gain = 0.000 ; free physical = 8478 ; free virtual = 26010
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file kria_eth_top_wrapper_drc_opted.rpt -pb kria_eth_top_wrapper_drc_opted.pb -rpx kria_eth_top_wrapper_drc_opted.rpx
+Command: report_drc -file kria_eth_top_wrapper_drc_opted.rpt -pb kria_eth_top_wrapper_drc_opted.pb -rpx kria_eth_top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 5442.648 ; gain = 702.160 ; free physical = 7786 ; free virtual = 25459
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7771 ; free virtual = 25451
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f09223dd
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7771 ; free virtual = 25451
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7771 ; free virtual = 25452
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Place 30-1907] kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 replication was created for kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i IDELAYCTRL
+INFO: [Place 30-1907] kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 replication was created for kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i IDELAYCTRL
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f8cc76a9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7785 ; free virtual = 25471
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 191179fc4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7783 ; free virtual = 25458
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 191179fc4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7783 ; free virtual = 25458
+Phase 1 Placer Initialization | Checksum: 191179fc4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7775 ; free virtual = 25458
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 188c3b652
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7751 ; free virtual = 25426
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 19e3c3394
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7733 ; free virtual = 25418
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 19e3c3394
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 5442.648 ; gain = 0.000 ; free physical = 7672 ; free virtual = 25409
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7662 ; free virtual = 25400
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7662 ; free virtual = 25400
+Phase 2.1.1 Partition Driven Placement | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7665 ; free virtual = 25403
+Phase 2.1 Floorplanning | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7671 ; free virtual = 25408
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7670 ; free virtual = 25407
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1cfea1f89
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 5471.004 ; gain = 28.355 ; free physical = 7670 ; free virtual = 25407
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 11eea24d9
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:22 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7632 ; free virtual = 25379
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 698 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 283 nets or LUTs. Breaked 0 LUT, combined 283 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 2 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7634 ; free virtual = 25375
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            283  |                   283  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            283  |                   283  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: f588b673
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:24 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7636 ; free virtual = 25379
+Phase 2.4 Global Placement Core | Checksum: 12b55b269
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:25 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7627 ; free virtual = 25371
+Phase 2 Global Placement | Checksum: 12b55b269
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:25 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7636 ; free virtual = 25380
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 10832bf95
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:26 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7632 ; free virtual = 25376
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 25042b7a3
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:27 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7630 ; free virtual = 25374
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 24facaca2
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:29 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7623 ; free virtual = 25375
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 190b6ea82
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:29 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7622 ; free virtual = 25374
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 25568db29
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7614 ; free virtual = 25366
+Phase 3.3.3 Slice Area Swap | Checksum: 25568db29
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7609 ; free virtual = 25362
+Phase 3.3 Small Shape DP | Checksum: a631da5a
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:31 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7617 ; free virtual = 25370
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1478a9b20
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7615 ; free virtual = 25369
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 14175be46
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7617 ; free virtual = 25371
+Phase 3 Detail Placement | Checksum: 14175be46
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7617 ; free virtual = 25371
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: ba336da9
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.063 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: a62ff9b1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.24 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7630 ; free virtual = 25375
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 3b843d5e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7630 ; free virtual = 25375
+Phase 4.1.1.1 BUFG Insertion | Checksum: ba336da9
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:37 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7630 ; free virtual = 25375
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.063. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 99976b82
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:38 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7627 ; free virtual = 25372
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:38 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7627 ; free virtual = 25372
+Phase 4.1 Post Commit Optimization | Checksum: 99976b82
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:38 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7627 ; free virtual = 25372
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7608 ; free virtual = 25361
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1309fb3d2
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:41 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1309fb3d2
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:41 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+Phase 4.3 Placer Reporting | Checksum: 1309fb3d2
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:41 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7610 ; free virtual = 25363
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:41 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14ebe20c5
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:42 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+Ending Placer Task | Checksum: e3b70c36
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:42 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7610 ; free virtual = 25363
+INFO: [Common 17-83] Releasing license: Implementation
+131 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:46 ; elapsed = 00:00:42 . Memory (MB): peak = 5474.016 ; gain = 31.367 ; free physical = 7700 ; free virtual = 25453
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7649 ; free virtual = 25437
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file kria_eth_top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.29 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7659 ; free virtual = 25417
+INFO: [runtcl-4] Executing : report_utilization -file kria_eth_top_wrapper_utilization_placed.rpt -pb kria_eth_top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file kria_eth_top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.26 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7675 ; free virtual = 25434
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7642 ; free virtual = 25409
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+140 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7588 ; free virtual = 25390
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 20f75a63 ConstDB: 0 ShapeSum: 2bb76983 RouteDB: 97084850
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.57 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7493 ; free virtual = 25268
+Post Restoration Checksum: NetGraph: 4bb41122 NumContArr: 110f8872 Constraints: 2520cf40 Timing: 0
+Phase 1 Build RT Design | Checksum: 81e468d4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7501 ; free virtual = 25275
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 81e468d4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7454 ; free virtual = 25227
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 81e468d4
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7454 ; free virtual = 25227
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 12aaaecce
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7437 ; free virtual = 25219
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1322c71b8
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7429 ; free virtual = 25208
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.117  | TNS=0.000  | WHS=-0.738 | THS=-514.160|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 22004
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 19319
+  Number of Partially Routed Nets     = 2685
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2cb904768
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:11 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7421 ; free virtual = 25200
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2cb904768
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:11 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7421 ; free virtual = 25200
+Phase 3 Initial Routing | Checksum: d7428e5a
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:14 . Memory (MB): peak = 5474.016 ; gain = 0.000 ; free physical = 7392 ; free virtual = 25163
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4755
+ Number of Nodes with overlaps = 340
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.063  | TNS=0.000  | WHS=-0.033 | THS=-0.325 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2e815588b
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:46 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7310 ; free virtual = 25154
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 27bfa437c
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:46 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7310 ; free virtual = 25154
+Phase 4 Rip-up And Reroute | Checksum: 27bfa437c
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:46 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7310 ; free virtual = 25154
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1f5a8ef32
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:48 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7313 ; free virtual = 25157
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.063  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 1fb78417e
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:49 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7302 ; free virtual = 25154
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.063  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 1fb78417e
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:49 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7302 ; free virtual = 25154
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1fb78417e
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:49 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7302 ; free virtual = 25154
+Phase 5 Delay and Skew Optimization | Checksum: 1fb78417e
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:49 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7302 ; free virtual = 25154
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1e7bdfc86
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:51 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7299 ; free virtual = 25151
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.063  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1504ff111
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:51 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7299 ; free virtual = 25151
+Phase 6 Post Hold Fix | Checksum: 1504ff111
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:51 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7299 ; free virtual = 25151
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.74964 %
+  Global Horizontal Routing Utilization  = 2.35095 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 15f19a3a3
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:51 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7299 ; free virtual = 25151
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 15f19a3a3
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:51 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7295 ; free virtual = 25147
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 15f19a3a3
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:52 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7295 ; free virtual = 25147
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 15f19a3a3
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:52 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7297 ; free virtual = 25149
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.063  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 15f19a3a3
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:53 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7297 ; free virtual = 25149
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:53 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7376 ; free virtual = 25228
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+156 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:03 ; elapsed = 00:00:54 . Memory (MB): peak = 5476.297 ; gain = 2.281 ; free physical = 7376 ; free virtual = 25228
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5476.297 ; gain = 0.000 ; free physical = 7336 ; free virtual = 25227
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file kria_eth_top_wrapper_drc_routed.rpt -pb kria_eth_top_wrapper_drc_routed.pb -rpx kria_eth_top_wrapper_drc_routed.rpx
+Command: report_drc -file kria_eth_top_wrapper_drc_routed.rpt -pb kria_eth_top_wrapper_drc_routed.pb -rpx kria_eth_top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file kria_eth_top_wrapper_methodology_drc_routed.rpt -pb kria_eth_top_wrapper_methodology_drc_routed.pb -rpx kria_eth_top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file kria_eth_top_wrapper_methodology_drc_routed.rpt -pb kria_eth_top_wrapper_methodology_drc_routed.pb -rpx kria_eth_top_wrapper_methodology_drc_routed.rpx
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/impl_1/kria_eth_top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file kria_eth_top_wrapper_power_routed.rpt -pb kria_eth_top_wrapper_power_summary_routed.pb -rpx kria_eth_top_wrapper_power_routed.rpx
+Command: report_power -file kria_eth_top_wrapper_power_routed.rpt -pb kria_eth_top_wrapper_power_summary_routed.pb -rpx kria_eth_top_wrapper_power_routed.rpx
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'kria_eth_top_i/axi_ethernet_0/inst/mac/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/bd_0/ip/ip_1/synth/bd_17e7_mac_0_clocks.xdc:28]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+170 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 5593.824 ; gain = 40.027 ; free physical = 7232 ; free virtual = 25140
+INFO: [runtcl-4] Executing : report_route_status -file kria_eth_top_wrapper_route_status.rpt -pb kria_eth_top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file kria_eth_top_wrapper_timing_summary_routed.rpt -pb kria_eth_top_wrapper_timing_summary_routed.pb -rpx kria_eth_top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_rx_ctl within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk_casc within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_ctl within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[0].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[1].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[2].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[3].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[0].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[1].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[2].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[3].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk_casc within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[0].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[1].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0 has a clock period of 3.333 ns (frequency 300.000 Mhz) and IDELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/rxdata_bus[2].delay_rgmii_rxd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the IDELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_ctl within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[0].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[1].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[2].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+CRITICAL WARNING: [Timing 38-470] The REFCLK pin of IDELAYCTRL kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_idelayctrl_common_i_REPLICATED_0_1 has a clock period of 3.333 ns (frequency 300.000 Mhz) and ODELAYE3 kria_eth_top_i/axi_ethernet_0/inst/mac/inst/tri_mode_ethernet_mac_i/rgmii_interface/txdata_out_bus[3].delay_rgmii_txd within its nibble has DELAY_FORMAT set to TIME with REFCLK_FREQUENCY of 333.333 Mhz (period 3.000 ns). The IDELAYCTRL REFCLK pin frequency must match the ODELAYE3 REFCLK_FREQUENCY property value when DELAY_FORMAT TIME is used.
+Resolution: Check that the IDELAYCTRL REFCLK pin is receiving a clock and that the period of the clock matches the REFCLK_FREQUENCY property of the <IDELAYE3/ODELAYE3>.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file kria_eth_top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file kria_eth_top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file kria_eth_top_wrapper_bus_skew_routed.rpt -pb kria_eth_top_wrapper_bus_skew_routed.pb -rpx kria_eth_top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 17:59:13 2023...

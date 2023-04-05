@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr  4 17:49:17 2023
+# Process ID: 169098
+# Current directory: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/bd_17e7_c_shift_ram_0_0_synth_1
+# Command line: vivado -log bd_17e7_c_shift_ram_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_17e7_c_shift_ram_0_0.tcl
+# Log file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/bd_17e7_c_shift_ram_0_0_synth_1/bd_17e7_c_shift_ram_0_0.vds
+# Journal file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/bd_17e7_c_shift_ram_0_0_synth_1/vivado.jou
+# Running On: Xilinx-Omniverse, OS: Linux, CPU Frequency: 4320.465 MHz, CPU Physical cores: 6, Host memory: 16587 MB
+#-----------------------------------------------------------
+source bd_17e7_c_shift_ram_0_0.tcl -notrace

@@ -3,7 +3,7 @@
 # 
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
-# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 # 
 
 if [ -z "$PATH" ]; then
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/denmann99/Documents/lab07/kria_state_machine/kria_state_machine.runs/synth_1'
+HD_PWD='/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga.tcl
+EAStep vivado -log kria_eth_top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_eth_top_wrapper.tcl

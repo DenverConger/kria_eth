@@ -1,0 +1,74 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.57482",
+   "Default View_TopLeft":"-343,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port s_axis_txd -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port s_axis_txc -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port m_axis_rxd -pg 1 -lvl 4 -x 1340 -y 290 -defaultsOSRD
+preplace port m_axis_rxs -pg 1 -lvl 4 -x 1340 -y 310 -defaultsOSRD
+preplace port mdio -pg 1 -lvl 4 -x 1340 -y 730 -defaultsOSRD
+preplace port rgmii -pg 1 -lvl 4 -x 1340 -y 710 -defaultsOSRD
+preplace port port-id_s_axi_lite_resetn -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace port port-id_s_axi_lite_clk -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port port-id_mac_irq -pg 1 -lvl 4 -x 1340 -y 1030 -defaultsOSRD
+preplace port port-id_axis_clk -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port port-id_axi_txd_arstn -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port port-id_axi_txc_arstn -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port port-id_axi_rxd_arstn -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port port-id_axi_rxs_arstn -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace port port-id_interrupt -pg 1 -lvl 4 -x 1340 -y 350 -defaultsOSRD
+preplace port port-id_gtx_clk -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace port port-id_ref_clk -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
+preplace portBus phy_rst_n -pg 1 -lvl 4 -x 1340 -y 1240 -defaultsOSRD
+preplace inst eth_buf -pg 1 -lvl 3 -x 1080 -y 360 -defaultsOSRD
+preplace inst mac -pg 1 -lvl 2 -x 590 -y 860 -defaultsOSRD
+preplace inst c_shift_ram_0 -pg 1 -lvl 3 -x 1080 -y 1240 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -x 590 -y 1200 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 590 -y 1330 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 1040 -defaultsOSRD
+preplace netloc c_counter_binary_0_THRESH0 1 2 1 790 1190n
+preplace netloc xlconstant_0_dout 1 2 1 890J 1210n
+preplace netloc util_vector_logic_0_Res 1 1 2 320 1270 N
+preplace netloc s_axi_lite_clk_1 1 0 3 NJ 450 330 180 860
+preplace netloc c_shift_ram_0_Q 1 3 1 NJ 1240
+preplace netloc s_axi_lite_resetn_1 1 0 3 20 860 320 190 NJ
+preplace netloc axi_rxs_arstn_1 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc axi_rxd_arstn_1 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc axi_txc_arstn_1 1 0 3 NJ 350 NJ 350 NJ
+preplace netloc axi_txd_arstn_1 1 0 3 NJ 310 NJ 310 NJ
+preplace netloc axis_clk_1 1 0 3 NJ 290 NJ 290 890
+preplace netloc mac_rx_statistics_vector 1 2 1 790 470n
+preplace netloc mac_rx_statistics_valid 1 2 1 800 490n
+preplace netloc eth_buf_tx_ifg_delay 1 1 3 390 1130 NJ 1130 1270
+preplace netloc eth_buf_pause_val 1 1 3 350 1120 NJ 1120 1280
+preplace netloc eth_buf_pause_req 1 1 3 380 1110 NJ 1110 1290
+preplace netloc mac_rx_reset 1 2 1 840 530n
+preplace netloc mac_tx_reset 1 2 1 880 570n
+preplace netloc mac_rx_mac_aclk 1 2 1 820 510n
+preplace netloc mac_tx_mac_aclk 1 2 1 870 550n
+preplace netloc eth_buf_RESET2TEMACn 1 1 3 370 10 NJ 10 1320
+preplace netloc eth_buf_INTERRUPT 1 3 1 NJ 350
+preplace netloc mac_mac_irq 1 2 2 NJ 1030 NJ
+preplace netloc mac_speedis10100 1 2 1 890 590n
+preplace netloc mac_rx_enable 1 2 1 810 450n
+preplace netloc gtx_clk_1 1 0 3 NJ 870 340 630 850J
+preplace netloc ref_clk_1 1 0 2 NJ 980 NJ
+preplace netloc s_axi_1 1 0 3 NJ 70 NJ 70 NJ
+preplace netloc s_axis_txc_1 1 0 3 NJ 90 NJ 90 NJ
+preplace netloc s_axis_txd_1 1 0 3 NJ 110 NJ 110 NJ
+preplace netloc eth_buf_AXI_STR_RXD 1 3 1 NJ 290
+preplace netloc eth_buf_AXI_STR_RXS 1 3 1 NJ 310
+preplace netloc eth_buf_S_AXI_2TEMAC 1 1 3 400 1090 NJ 1090 1310
+preplace netloc mac_m_axis_rx 1 2 1 780 130n
+preplace netloc eth_buf_TX_AXIS_MAC 1 1 3 360 1100 NJ 1100 1300
+preplace netloc mac_rgmii 1 2 2 830J 710 NJ
+preplace netloc mac_mdio_internal 1 2 2 NJ 730 NJ
+levelinfo -pg 1 0 170 590 1080 1340
+pagesize -pg 1 -db -bbox -sgen -180 0 1490 1380
+"
+}
+

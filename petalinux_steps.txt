@@ -1,0 +1,10 @@
+petalinux-create -t project -s ../../../xilinx-kr260-starterkit-v2022.2-10141622.bsp
+
+petalinux-config --get-hw-description ../../hw/kria_state_machine/kria_eth_top_wrapper.xsa
+
+petalinux-build
+
+petalinux-package --boot --u-boot --force --fpga images/linux/system.bit
+
+
+petalinux-package --wic --images-dir images/linux/ --bootfiles "BOOT.BIN,ramdisk.cpio.gz.u-boot,boot.scr,Image,system.dtb,system-zynqmp-sck-kr-g-revB.dtb" --disk-name "sda"

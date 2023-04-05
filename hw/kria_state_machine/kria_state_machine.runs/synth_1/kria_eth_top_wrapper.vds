@@ -1,0 +1,542 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr  4 18:53:08 2023
+# Process ID: 516973
+# Current directory: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1
+# Command line: vivado -log kria_eth_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kria_eth_top_wrapper.tcl
+# Log file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/kria_eth_top_wrapper.vds
+# Journal file: /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/vivado.jou
+# Running On: Xilinx-Omniverse, OS: Linux, CPU Frequency: 4433.356 MHz, CPU Physical cores: 6, Host memory: 16587 MB
+#-----------------------------------------------------------
+source kria_eth_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.srcs/utils_1/imports/synth_1/state_machine_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.srcs/utils_1/imports/synth_1/state_machine_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top kria_eth_top_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 517057
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3408.457 ; gain = 241.801 ; free physical = 4440 ; free virtual = 25775
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4411.547; parent = 3414.398; children = 997.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_wrapper' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/hdl/kria_eth_top_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_axi_ethernet_0_2' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_ethernet_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_axi_ethernet_0_2' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_ethernet_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_axi_ethernet_0_dma_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_ethernet_0_dma_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_axi_ethernet_0_dma_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_ethernet_0_dma_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'kria_eth_top_axi_ethernet_0_dma_0' is unconnected for instance 'axi_ethernet_0_dma' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:324]
+WARNING: [Synth 8-7023] instance 'axi_ethernet_0_dma' of module 'kria_eth_top_axi_ethernet_0_dma_0' has 106 connections declared, but only 105 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:324]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_axi_smc_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_smc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_axi_smc_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_axi_smc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_clk_wiz_2' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_clk_wiz_2' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_clk_wiz_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_proc_sys_reset_125_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_125_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_proc_sys_reset_125_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_125_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'kria_eth_top_proc_sys_reset_125_0' is unconnected for instance 'proc_sys_reset_100' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:540]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'kria_eth_top_proc_sys_reset_125_0' is unconnected for instance 'proc_sys_reset_100' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:540]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'kria_eth_top_proc_sys_reset_125_0' is unconnected for instance 'proc_sys_reset_100' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:540]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'kria_eth_top_proc_sys_reset_125_0' is unconnected for instance 'proc_sys_reset_100' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:540]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_100' of module 'kria_eth_top_proc_sys_reset_125_0' has 10 connections declared, but only 6 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:540]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_proc_sys_reset_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_proc_sys_reset_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'kria_eth_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_125' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'kria_eth_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_125' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'kria_eth_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_125' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'kria_eth_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_125' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'kria_eth_top_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_125' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_125' of module 'kria_eth_top_proc_sys_reset_0_0' has 10 connections declared, but only 5 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:547]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_proc_sys_reset_1_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_proc_sys_reset_1_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_proc_sys_reset_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'kria_eth_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_300' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'kria_eth_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_300' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'kria_eth_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_300' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'kria_eth_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_300' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'kria_eth_top_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_300' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_300' of module 'kria_eth_top_proc_sys_reset_1_0' has 10 connections declared, but only 5 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:553]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_ps8_0_axi_periph_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:737]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1K8VPZI' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1304]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_auto_cc_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_auto_cc_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'kria_eth_top_auto_cc_0' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1467]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'kria_eth_top_auto_cc_0' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1467]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'kria_eth_top_auto_cc_0' has 42 connections declared, but only 40 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1467]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1K8VPZI' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1304]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1PHPQXA' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1510]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_auto_cc_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_auto_cc_1' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'kria_eth_top_auto_cc_1' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1669]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'kria_eth_top_auto_cc_1' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1669]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'kria_eth_top_auto_cc_1' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1669]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'kria_eth_top_auto_cc_1' has 42 connections declared, but only 39 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1669]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1PHPQXA' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1510]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1NWSSRH' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1711]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_auto_cc_2' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_auto_cc_2' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_cc_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'kria_eth_top_auto_cc_2' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:2001]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'kria_eth_top_auto_cc_2' is unconnected for instance 'auto_cc' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:2001]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'kria_eth_top_auto_cc_2' has 86 connections declared, but only 84 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:2001]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_auto_pc_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_auto_pc_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1NWSSRH' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:1711]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_xbar_1' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_xbar_1' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_ps8_0_axi_periph_1' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:737]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_rst_ps8_0_99M_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_rst_ps8_0_99M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_rst_ps8_0_99M_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_rst_ps8_0_99M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'kria_eth_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_200M' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:640]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'kria_eth_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_200M' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:640]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'kria_eth_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_200M' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:640]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'kria_eth_top_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_200M' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:640]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_200M' of module 'kria_eth_top_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:640]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_xlconcat_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_xlconcat_0_0/synth/kria_eth_top_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_xlconcat_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_xlconcat_0_0/synth/kria_eth_top_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'kria_eth_top_zynq_ultra_ps_e_0_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_zynq_ultra_ps_e_0_0' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/.Xil/Vivado-516973-Xilinx-Omniverse/realtime/kria_eth_top_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7071] port 'emio_enet0_enet_tsu_timer_cnt' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7071] port 'pl_resetn1' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7071] port 'pl_clk0' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'kria_eth_top_zynq_ultra_ps_e_0_0' has 87 connections declared, but only 81 given [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:653]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/synth/kria_eth_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/tools/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'kria_eth_top_wrapper' (0#1) [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/hdl/kria_eth_top_wrapper.v:12]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3483.363 ; gain = 316.707 ; free physical = 4524 ; free virtual = 25860
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4480.516; parent = 3483.367; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3501.176 ; gain = 334.520 ; free physical = 4524 ; free virtual = 25860
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4498.328; parent = 3501.180; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3501.176 ; gain = 334.520 ; free physical = 4524 ; free virtual = 25860
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4498.328; parent = 3501.180; children = 997.148
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3507.113 ; gain = 0.000 ; free physical = 4521 ; free virtual = 25858
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kria_eth_top_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0/kria_eth_top_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'kria_eth_top_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_in_context.xdc] for cell 'kria_eth_top_i/clk_wiz'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_in_context.xdc] for cell 'kria_eth_top_i/clk_wiz'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc] for cell 'kria_eth_top_i/axi_ethernet_0'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc] for cell 'kria_eth_top_i/axi_ethernet_0'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0_in_context.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0/kria_eth_top_axi_ethernet_0_dma_0_in_context.xdc] for cell 'kria_eth_top_i/axi_ethernet_0_dma'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/kria_eth_top_axi_smc_0/kria_eth_top_axi_smc_0_in_context.xdc] for cell 'kria_eth_top_i/axi_smc'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_smc_0/kria_eth_top_axi_smc_0/kria_eth_top_axi_smc_0_in_context.xdc] for cell 'kria_eth_top_i/axi_smc'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_xbar_1/kria_eth_top_xbar_1/kria_eth_top_xbar_1_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_xbar_1/kria_eth_top_xbar_1/kria_eth_top_xbar_1_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_3_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_2/kria_eth_top_auto_cc_3_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_pc_0/kria_eth_top_auto_pc_0/kria_eth_top_auto_pc_0_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_pc_0/kria_eth_top_auto_pc_0/kria_eth_top_auto_pc_0_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0/kria_eth_top_auto_cc_0_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1/kria_eth_top_auto_cc_1_in_context.xdc] for cell 'kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0_in_context.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0/kria_eth_top_rst_ps8_0_99M_0_in_context.xdc] for cell 'kria_eth_top_i/rst_ps8_0_200M'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0/kria_eth_top_proc_sys_reset_0_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_125'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0/kria_eth_top_proc_sys_reset_1_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_300'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100'
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0/kria_eth_top_proc_sys_reset_125_0_in_context.xdc] for cell 'kria_eth_top_i/proc_sys_reset_100'
+Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3598.895 ; gain = 0.000 ; free physical = 4414 ; free virtual = 25769
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3598.895 ; gain = 0.000 ; free physical = 4414 ; free virtual = 25769
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'kria_eth_top_i/axi_ethernet_0' at clock pin 'ref_clk' is different from the actual clock period '3.333', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3598.895 ; gain = 432.238 ; free physical = 4475 ; free virtual = 25825
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4564.031; parent = 3566.883; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3598.895 ; gain = 432.238 ; free physical = 4480 ; free virtual = 25830
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4564.031; parent = 3566.883; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for som240_1_connector_hpa_clk0p_clk. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_1_connector_hpa_clk0p_clk. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2/kria_eth_top_clk_wiz_2_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rd[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rxc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_rxc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[0]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[1]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[2]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_td[3]. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_tx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_tx_ctl. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_txc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for som240_2_connector_pl_gem3_rgmii_txc. (constraint file  /home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.gen/sources_1/bd/kria_eth_top/ip/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2/kria_eth_top_axi_ethernet_0_2_in_context.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/axi_ethernet_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/axi_ethernet_0_dma. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph/m00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph/m01_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/rst_ps8_0_200M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/proc_sys_reset_125. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/proc_sys_reset_300. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for kria_eth_top_i/proc_sys_reset_100. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3598.895 ; gain = 432.238 ; free physical = 4493 ; free virtual = 25834
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4564.031; parent = 3566.883; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3598.895 ; gain = 432.238 ; free physical = 4493 ; free virtual = 25835
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4564.031; parent = 3566.883; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3598.895 ; gain = 432.238 ; free physical = 4487 ; free virtual = 25833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2826.383; parent = 2621.091; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4564.031; parent = 3566.883; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 4022.473 ; gain = 855.816 ; free physical = 3912 ; free virtual = 25251
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3377.669; parent = 3172.429; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5019.625; parent = 4022.477; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 4022.473 ; gain = 855.816 ; free physical = 3911 ; free virtual = 25250
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3378.083; parent = 3172.843; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5019.625; parent = 4022.477; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 4042.512 ; gain = 875.855 ; free physical = 3905 ; free virtual = 25244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3379.474; parent = 3174.233; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5039.664; parent = 4042.516; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3907 ; free virtual = 25246
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3379.860; parent = 3174.620; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3907 ; free virtual = 25246
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3379.860; parent = 3174.620; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3907 ; free virtual = 25246
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3380.024; parent = 3174.784; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3907 ; free virtual = 25246
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3380.087; parent = 3174.847; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3906 ; free virtual = 25245
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3380.087; parent = 3174.847; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3905 ; free virtual = 25244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3380.103; parent = 3174.862; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |kria_eth_top_xbar_1               |         1|
+|2     |kria_eth_top_auto_cc_0            |         1|
+|3     |kria_eth_top_auto_cc_1            |         1|
+|4     |kria_eth_top_auto_cc_2            |         1|
+|5     |kria_eth_top_auto_pc_0            |         1|
+|6     |kria_eth_top_axi_ethernet_0_2     |         1|
+|7     |kria_eth_top_axi_ethernet_0_dma_0 |         1|
+|8     |kria_eth_top_axi_smc_0            |         1|
+|9     |kria_eth_top_clk_wiz_2            |         1|
+|10    |kria_eth_top_proc_sys_reset_125_0 |         1|
+|11    |kria_eth_top_proc_sys_reset_0_0   |         1|
+|12    |kria_eth_top_proc_sys_reset_1_0   |         1|
+|13    |kria_eth_top_rst_ps8_0_99M_0      |         1|
+|14    |kria_eth_top_zynq_ultra_ps_e_0_0  |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |kria_eth_top_auto_cc            |     3|
+|4     |kria_eth_top_auto_pc            |     1|
+|5     |kria_eth_top_axi_ethernet_0     |     1|
+|6     |kria_eth_top_axi_ethernet_0_dma |     1|
+|7     |kria_eth_top_axi_smc            |     1|
+|8     |kria_eth_top_clk_wiz            |     1|
+|9     |kria_eth_top_proc_sys_reset_0   |     1|
+|10    |kria_eth_top_proc_sys_reset_125 |     1|
+|11    |kria_eth_top_proc_sys_reset_1   |     1|
+|12    |kria_eth_top_rst_ps8_0_99M      |     1|
+|13    |kria_eth_top_xbar               |     1|
+|14    |kria_eth_top_zynq_ultra_ps_e_0  |     1|
+|15    |IOBUF                           |     1|
+|16    |OBUF                            |     2|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 4048.449 ; gain = 881.793 ; free physical = 3905 ; free virtual = 25244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3380.122; parent = 3174.882; children = 205.292
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5045.602; parent = 4048.453; children = 997.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 4048.449 ; gain = 784.074 ; free physical = 3948 ; free virtual = 25287
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 4048.457 ; gain = 881.793 ; free physical = 3948 ; free virtual = 25287
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4048.457 ; gain = 0.000 ; free physical = 4060 ; free virtual = 25399
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4083.137 ; gain = 0.000 ; free physical = 3989 ; free virtual = 25328
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+Synth Design complete, checksum: 6a57a544
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 4083.137 ; gain = 1855.590 ; free physical = 4190 ; free virtual = 25529
+INFO: [Common 17-1381] The checkpoint '/home/denmann99/Documents/kria_eth/hw/kria_state_machine/kria_state_machine.runs/synth_1/kria_eth_top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kria_eth_top_wrapper_utilization_synth.rpt -pb kria_eth_top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 18:53:54 2023...
