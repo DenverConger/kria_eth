@@ -1,0 +1,15 @@
+./fw/kria_eth_working_plnx/petalinux-sdimage.zip
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/xen/xen-rootfs.cpio.gz
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/rootfs.tar.gz
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/rootfs.cpio.gz
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/rootfs.jffs2
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/vmlinux
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/petalinux-sdimage.wic.xz
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/rootfs.ext4
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/pre-built/linux/images/rootfs.cpio.gz.u-boot
+./fw/kria_eth_working_plnx/xilinx-kr260-starterkit-2022.2/project-spec/hw-description/system.xsa
+./.git/objects/0e/5b27f2dff3ae0d22846e2b71a8274967b3562c
+./.git/objects/cd/1e3f5521486f50e87a31a7adc1e514fd44215a
+./.git/objects/39/6802b54216efbeab4577c8475530ef3ef6eb88
+./.git/objects/d6/tmp_obj_N0iDwb
+./.git/objects/d6/eb3cf3d7beb4db7b1c22601501cd42a69bae11
